@@ -29,14 +29,19 @@ class App extends Component {
     chosen: [],
   }
 
-  handleClick = name => {
-    if (this.state.chosen.indexOf(name) === -1) {
-      this.handleIncrement()
-      this.setState({ chosen: this.state.chosen.concat(name) })
-    } else {
-      this.handleReset()
-    }
+ handleShuffle = () => {
+    let shuffled = shuffle(animals)
+    this.setState({ animals: shuffled })
   }
+
+  handleReset = () => {
+      this.setState({
+        currentScore: 0,
+        highScore: this.state.highScore,
+        chosen: []
+      })
+      this.handleShuffle()
+    }
 
   handleIncrement = () => {
     const newScore = this.state.currentScore + 1
@@ -52,18 +57,14 @@ class App extends Component {
     this.handleShuffle()
   }
 
-  handleReset = () => {
-    this.setState({
-      currentScore: 0,
-      highScore: this.state.highScore,
-      chosen: []
-    })
-    this.handleShuffle()
-  }
-
-  handleShuffle = () => {
-    let shuffled = shuffle(animals)
-    this.setState({ animals: shuffled })
+  handleClick = name => {
+    if (this.state.chosen.indexOf(name) === -1) {
+      this.handleIncrement()
+      this.setState({ chosen: this.state.chosen.concat(name), correct: "Nice pick!" })
+    } else {
+      this.handleReset()
+      this.setState({ correct: "Sorry you already picked that!" })
+    }
   }
 
   render() {
@@ -72,6 +73,7 @@ class App extends Component {
         <Head
           currentScore={this.state.currentScore}
           highScore={this.state.highScore}
+          correct={this.state.correct}
         />
       {this.state.animals.map(animal => (
         <AnimalCard
@@ -79,7 +81,6 @@ class App extends Component {
           key={animal.id}
           name={animal.name}
           image={animal.image}
-          genus={animal.genus}
           science={animal.science}
           status={animal.status}
           handleIncrement={this.handleIncrement}

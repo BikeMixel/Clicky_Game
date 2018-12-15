@@ -15,9 +15,6 @@ const AnimalCard = props => (
           <strong>Common Name:</strong> {props.name}
         </li>
         <li>
-          <strong>Genus:</strong> {props.genus}
-        </li>
-        <li>
           <strong>Scientific Name:</strong> {props.science}
         </li>
         <li>
