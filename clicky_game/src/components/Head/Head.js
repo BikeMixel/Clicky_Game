@@ -1,16 +1,16 @@
-import React from "react";
-import "./Head.css";
+import React from "react"
+import "./Head.css"
 
 const Head = props => (
   <nav>
     <ul>
-      <li className="brand animated lightSpeedIn">
+      <li>
         <p>Animal Clicky Game!</p>
       </li>
-      <li>Current Score: {props.score} </li>
-      <li>Top Score: {props.highScore}</li>
+      <li>Current Score: {props.currentScore} </li>
+      <li>High Score: {props.highScore} </li>
     </ul>
   </nav>
-);
+)
 
-export default Head;
+export default Head

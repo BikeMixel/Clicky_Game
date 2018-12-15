@@ -8,14 +8,11 @@ import Head from './components/Head/Head'
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
-  // While there remain elements to shuffle...
   while (0 !== currentIndex) {
 
-    // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
 
-    // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
@@ -49,13 +46,12 @@ class App extends Component {
     const newScore = this.state.currentScore + 1
     this.setState({
       currentScore: newScore,
-      correctIncorrect: "You guessed correctly!"
     })
-    if (newScore >= this.state.topScore) {
-      this.setState({ topScore: newScore })
+    if (newScore >= this.state.highScore) {
+      this.setState({ highScore: newScore })
     }
     else if (newScore === 12) {
-      this.setState({ correctIncorrect: "You win!" })
+      this.setState({ correct: "You win!" })
     }
     this.handleShuffle()
   }
@@ -65,7 +61,7 @@ class App extends Component {
       currentScore: 0,
       highScore: this.state.highScore,
       correct: "Sorry, you guessed incorrectly!",
-      clicked: []
+      chosen: []
     })
     this.handleShuffle()
   }
@@ -86,6 +82,8 @@ class App extends Component {
           name={animal.name}
           image={animal.image}
           family={animal.family}
+          handleIncrement={this.handleIncrement}
+          handleReset={this.handleReset}
           handleShuffle={this.handleShuffle}
           handleClick={this.handleClick}
         />
