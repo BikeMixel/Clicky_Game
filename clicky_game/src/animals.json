@@ -1,0 +1,86 @@
+[
+    {
+      "id": 1,
+      "name": "Zebra",
+      "image": "https://images4.alphacoders.com/277/thumb-1920-277008.jpg",
+      "family": "Equidae",
+      "chosen": false
+    },
+    {
+      "id": 2,
+      "name": "Hammerhead",
+      "image": "http://seaa.rwsentosablog.com/wp-content/uploads/2013/09/Hammerhaed-shark-1024x725.jpg",
+      "family": "Sphyrnidae",
+      "chosen": false
+    },
+    {
+      "id": 3,
+      "name": "Octopus",
+      "image": "https://www.futurity.org/wp/wp-content/uploads/2017/10/red_octopus_1600.jpg",
+      "family": "Octopodidae",
+      "chosen": false
+    },
+    {
+      "id": 4,
+      "name": "Rhinoceros",
+      "image": "https://i.pinimg.com/originals/59/4f/6d/594f6d8adf6b74054ad3e829e2db4950.jpg",
+      "family": "Rhinocerotidae",
+      "chosen": false
+    },
+    {
+      "id": 5,
+      "name": "Squirrel",
+      "image": "https://i.pinimg.com/originals/0f/89/1d/0f891d850d26b136fe25f98dce028461.jpg",
+      "family": "Sciuridae",
+      "chosen": false
+    },
+    {
+      "id": 6,
+      "name": "Tiger",
+      "image": "https://i.pinimg.com/originals/40/cc/72/40cc7286adf7bf466287a08f68c656aa.jpg",
+      "family": "Felidae",
+      "chosen": false
+    },
+    {
+      "id": 7,
+      "name": "Rabbit",
+      "image": "https://images8.alphacoders.com/396/396349.jpg",
+      "family": "Leporidae",
+      "chosen": false
+    },
+    {
+      "id": 8,
+      "name": "Gorilla",
+      "image": "https://ak8.picdn.net/shutterstock/videos/1136668/thumb/1.jpg",
+      "family": "Hominidae",
+      "chosen": false
+    },
+    {
+      "id": 9,
+      "name": "Bald Eagle",
+      "image": "https://cdn.hipwallpaper.com/i/54/88/ExNGgM.jpg",
+      "family": "Accipitridae",
+      "chosen": false
+    },
+    {
+      "id": 10,
+      "name": "Wallaby",
+      "image": "http://wallpapers.ae/wp-content/uploads/2015/12/Wallaby-picture.jpg",
+      "family": "Macropodidae",
+      "chosen": false
+    },
+    {
+      "id": 11,
+      "name": "Cobra",
+      "image": "https://wallpapercave.com/wp/wp2709885.jpg",
+      "family": "Elapidae",
+      "chosen": false
+    },
+    {
+      "id": 12,
+      "name": "Alligator",
+      "image": "https://www.nwf.org/-/media/NEW-WEBSITE/Shared-Folder/Wildlife/Reptiles/reptile_american-alligator-florida_brian-imparato_600x300.ashx",
+      "family": "Alligatoridae",
+      "chosen": false
+    }
+  ]
