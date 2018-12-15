@@ -5,20 +5,18 @@ import AnimalCard from './components/AnimalCard/AnimalCard'
 import Head from './components/Head/Head'
 
 // Fisher-Yates algorithm 
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
+function shuffle (array) {
+  var currentIndex = array.length, temporaryValue, randomIndex
 
   while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
 
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
+    temporaryValue = array[currentIndex]
+    array[currentIndex] = array[randomIndex]
+    array[randomIndex] = temporaryValue
   }
-
-  return array;
+  return array
 }
 
 
@@ -28,10 +26,8 @@ class App extends Component {
     animals,
     currentScore: 0,
     highScore: 0,
-    correct: "",
     chosen: [],
   }
-
 
   handleClick = name => {
     if (this.state.chosen.indexOf(name) === -1) {
@@ -51,7 +47,7 @@ class App extends Component {
       this.setState({ highScore: newScore })
     }
     else if (newScore === 12) {
-      this.setState({ correct: "You win!" })
+      this.setState({ correct: "You got them all right!" })
     }
     this.handleShuffle()
   }
@@ -60,7 +56,6 @@ class App extends Component {
     this.setState({
       currentScore: 0,
       highScore: this.state.highScore,
-      correct: "Sorry, you guessed incorrectly!",
       chosen: []
     })
     this.handleShuffle()
@@ -74,14 +69,19 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Head />
+        <Head
+          currentScore={this.state.currentScore}
+          highScore={this.state.highScore}
+        />
       {this.state.animals.map(animal => (
         <AnimalCard
           id={animal.id}
           key={animal.id}
           name={animal.name}
           image={animal.image}
-          family={animal.family}
+          genus={animal.genus}
+          science={animal.science}
+          status={animal.status}
           handleIncrement={this.handleIncrement}
           handleReset={this.handleReset}
           handleShuffle={this.handleShuffle}
