@@ -3,6 +3,7 @@ import Wrapper from './components/Wrapper/Wrapper'
 import animals from './animals.json'
 import AnimalCard from './components/AnimalCard/AnimalCard'
 import Head from './components/Head/Head'
+import Title from './components/Title/Title'
 
 // Fisher-Yates algorithm 
 function shuffle (array) {
@@ -68,8 +69,9 @@ class App extends Component {
   }
 
   render() {
-    return (
+    return (  
       <Wrapper>
+        <Title />
         <Head
           currentScore={this.state.currentScore}
           highScore={this.state.highScore}
