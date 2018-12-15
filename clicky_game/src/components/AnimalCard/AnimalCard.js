@@ -3,8 +3,8 @@ import './AnimalCard.css'
 
 const AnimalCard = props => (
   <div className="card"
-      value={props.id} 
-      onClick={() => props.handleClick(props.id)}
+      value={props.name} 
+      onClick={() => props.handleClick(props.name)}
   >
     <div className="img-container">
       <img className="img-fluid" alt={props.name} src={props.image} />

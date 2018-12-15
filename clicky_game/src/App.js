@@ -36,10 +36,10 @@ class App extends Component {
   }
 
 
-  handleClick = id => {
-    if (this.state.clicked.indexOf(id) === -1) {
+  handleClick = name => {
+    if (this.state.chosen.indexOf(name) === -1) {
       this.handleIncrement()
-      this.setState({ clicked: this.state.chosen.concat(id) })
+      this.setState({ chosen: this.state.chosen.concat(name) })
     } else {
       this.handleReset()
     }
@@ -74,7 +74,7 @@ class App extends Component {
     let shuffled = shuffle(animals)
     this.setState({ animals: shuffled })
   }
-  
+
   render() {
     return (
       <Wrapper>
@@ -87,6 +87,7 @@ class App extends Component {
           image={animal.image}
           family={animal.family}
           handleShuffle={this.handleShuffle}
+          handleClick={this.handleClick}
         />
       ))}
     </Wrapper>
