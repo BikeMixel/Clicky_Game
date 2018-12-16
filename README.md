@@ -1,3 +1,8 @@
+# Clicking / Memory Game built with React 
+
+###### It's a simple game where you click on 1 of 12 cards, and behind the scenes, your selections are being stored.  If you choose the same card twice, the game will restart and your score will go back down to 0.  It's a little trickier than it sounds! 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
