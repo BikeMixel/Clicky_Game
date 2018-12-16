@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/BikeMixel/Clicky_Game/precache-manifest.2e5d997089f9e791c81ee38608dd97c1.js"
+  "/BikeMixel/Clicky_Game/precache-manifest.77f6206084fe7795d032bd45ed47bbf6.js"
 );
 
 workbox.clientsClaim();
