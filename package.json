@@ -2,24 +2,25 @@
   "name": "clicky_hame",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://BikeMixel.github.io/Clicky_Game/",
   "dependencies": {
     "bootstrap": "^4.1.3",
+    "gh-pages": "^2.0.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start",    
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
+
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage" : "http://BikeMixel.github.io/Clicky_Game",
   "browserslist": [
     ">0.2%",
     "not dead",
