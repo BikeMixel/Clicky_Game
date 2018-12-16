@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/BikeMixel/Clicky_Game/precache-manifest.77f6206084fe7795d032bd45ed47bbf6.js"
+  "/Clicky_Game/precache-manifest.337f1295aebaeb4b22822477f7e40570.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/BikeMixel/Clicky_Game/index.html", {
+workbox.routing.registerNavigationRoute("/Clicky_Game/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

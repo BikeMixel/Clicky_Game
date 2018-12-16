@@ -1,15 +1,15 @@
 {
-  "main.css": "/BikeMixel/Clicky_Game/static/css/main.f2330d8f.chunk.css",
-  "main.js": "/BikeMixel/Clicky_Game/static/js/main.89f5f19e.chunk.js",
-  "main.js.map": "/BikeMixel/Clicky_Game/static/js/main.89f5f19e.chunk.js.map",
-  "static/css/1.5e8a78a5.chunk.css": "/BikeMixel/Clicky_Game/static/css/1.5e8a78a5.chunk.css",
-  "static/js/1.3a5a4e9f.chunk.js": "/BikeMixel/Clicky_Game/static/js/1.3a5a4e9f.chunk.js",
-  "static/js/1.3a5a4e9f.chunk.js.map": "/BikeMixel/Clicky_Game/static/js/1.3a5a4e9f.chunk.js.map",
-  "runtime~main.js": "/BikeMixel/Clicky_Game/static/js/runtime~main.72b809af.js",
-  "runtime~main.js.map": "/BikeMixel/Clicky_Game/static/js/runtime~main.72b809af.js.map",
-  "static/css/1.5e8a78a5.chunk.css.map": "/BikeMixel/Clicky_Game/static/css/1.5e8a78a5.chunk.css.map",
-  "static/css/main.f2330d8f.chunk.css.map": "/BikeMixel/Clicky_Game/static/css/main.f2330d8f.chunk.css.map",
-  "index.html": "/BikeMixel/Clicky_Game/index.html",
-  "precache-manifest.77f6206084fe7795d032bd45ed47bbf6.js": "/BikeMixel/Clicky_Game/precache-manifest.77f6206084fe7795d032bd45ed47bbf6.js",
-  "service-worker.js": "/BikeMixel/Clicky_Game/service-worker.js"
+  "main.css": "/Clicky_Game/static/css/main.f2330d8f.chunk.css",
+  "main.js": "/Clicky_Game/static/js/main.7e33a86a.chunk.js",
+  "main.js.map": "/Clicky_Game/static/js/main.7e33a86a.chunk.js.map",
+  "static/css/1.5e8a78a5.chunk.css": "/Clicky_Game/static/css/1.5e8a78a5.chunk.css",
+  "static/js/1.3a5a4e9f.chunk.js": "/Clicky_Game/static/js/1.3a5a4e9f.chunk.js",
+  "static/js/1.3a5a4e9f.chunk.js.map": "/Clicky_Game/static/js/1.3a5a4e9f.chunk.js.map",
+  "runtime~main.js": "/Clicky_Game/static/js/runtime~main.9ff56a88.js",
+  "runtime~main.js.map": "/Clicky_Game/static/js/runtime~main.9ff56a88.js.map",
+  "static/css/1.5e8a78a5.chunk.css.map": "/Clicky_Game/static/css/1.5e8a78a5.chunk.css.map",
+  "static/css/main.f2330d8f.chunk.css.map": "/Clicky_Game/static/css/main.f2330d8f.chunk.css.map",
+  "index.html": "/Clicky_Game/index.html",
+  "precache-manifest.337f1295aebaeb4b22822477f7e40570.js": "/Clicky_Game/precache-manifest.337f1295aebaeb4b22822477f7e40570.js",
+  "service-worker.js": "/Clicky_Game/service-worker.js"
 }
