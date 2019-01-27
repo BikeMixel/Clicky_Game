@@ -3,8 +3,9 @@ nav {
     font-size: 36px;
     color: #fff;
     /* margin-bottom: 50px; */
-    background-image: linear-gradient(to left,  rgb(34, 33, 33), gray, lightgray, gray, rgb(34, 33, 33))
+    background-image: linear-gradient(to left,  rgb(34, 33, 33), gray, lightgray, gray, rgb(34, 33, 33));
     /* height: auto; */
+    box-shadow: 5px 5px 15px black
   }  
   nav li {
     display: inline-block;

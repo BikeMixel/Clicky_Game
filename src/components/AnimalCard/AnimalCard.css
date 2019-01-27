@@ -5,7 +5,8 @@
     width: 325px;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     text-align: left;
-  }
+    box-shadow: 5px 5px 15px black
+}
   
   .card > .img-container {
     overflow: hidden;
@@ -26,9 +27,9 @@
     font-family: 'ZCOOL XiaoWei', serif;
   }
 
-  img:hover {
+  .card:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake .75s; 
+    animation: shake 1.5s; 
   
     /* When the animation is finished, start again */
     animation-iteration-count: infinite; 

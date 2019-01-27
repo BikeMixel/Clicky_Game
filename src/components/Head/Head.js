@@ -5,8 +5,8 @@ const Head = props => (
   <nav>
     <ul>
       <li>Score: { props.currentScore }</li>
-      <li>High Score: { props.highScore }</li>
       <li> { props.correct }</li>
+      <li>High Score: { props.highScore }</li>
     </ul>
   </nav>
 )

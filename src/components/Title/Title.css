@@ -1,8 +1,21 @@
 h1 {
     text-align: center;
-    font-size: 56px !important;
+    font-size: 7rem !important;
+    text-shadow: 6px 6px white;
+    
     font-family: 'Pacifico', cursive !important;
 }
 h3 {
     font-family: 'ZCOOL XiaoWei', serif !important;
+    margin-top: 4rem !important;
+}
+.special-h2 {
+    text-align: center;
+    font-family: 'ZCOOL XiaoWei', serif !important;
+}
+.special-p {
+    font-size: 5rem;
+    text-shadow: 5px 5px white;
+    text-align: center;
+    margin-top: 1rem
 }
